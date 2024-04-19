@@ -54,29 +54,6 @@ export default function DashSidebar() {
               Profile
             </Sidebar.Item>
           </Link>
-          {currentUser.isAdmin && (
-            <Link to="/dashboard?tab=events">
-              <Sidebar.Item
-                active={tab === "events"}
-                icon={HiDocumentText}
-                as="div"
-              >
-                Events
-              </Sidebar.Item>
-            </Link>
-          )}
-
-          {currentUser.isAdmin && (
-            <Link to="/dashboard?tab=users">
-              <Sidebar.Item
-                active={tab === "users"}
-                icon={HiOutlineUserGroup}
-                as="div"
-              >
-                Users
-              </Sidebar.Item>
-            </Link>
-          )}
 
           <Sidebar.Item
             onClick={handleSignout}

@@ -274,17 +274,6 @@ const DashProfile = () => {
         >
           {loading ? "loading..." : "update"}
         </Button>
-        {currentUser.isAdmin && (
-          <Link to={"/create"}>
-            <Button
-              type="button"
-              gradientDuoTone="purpleToPink"
-              className="w-full"
-            >
-              Create Event
-            </Button>
-          </Link>
-        )}
       </form>
       <div className="flex text-red-500 justify-between mt-5">
         <span onClick={() => setShowModal(true)} className=" cursor-pointer">
