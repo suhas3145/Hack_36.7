@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 
 import userRoutes from "./routes/user.route.js";
 import authRoutes from "./routes/auth.route.js";
+import ideasRoutes from "./routes/ideasRoutes.js";
 
 import cookieParser from "cookie-parser";
 
@@ -28,6 +29,7 @@ app.listen(3000, () => {
 });
 app.use("/api/user", userRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/ideas", ideasRoutes);
 
 app.use((err, req, res, next) => {
   //middleware for handling errors
