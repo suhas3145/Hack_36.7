@@ -26,7 +26,6 @@ import { motion } from "framer-motion";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 import { Bounce } from "react-toastify";
 
 const DashProfile = () => {
@@ -91,8 +90,8 @@ const DashProfile = () => {
   useEffect(() => {
     setIsDisabled(
       formData.username === initialData.username &&
-        formData.email === initialData.email &&
-        formData.profilePicture === currentUser.profilePicture
+      formData.email === initialData.email &&
+      formData.profilePicture === currentUser.profilePicture
     );
   }, [
     formData,

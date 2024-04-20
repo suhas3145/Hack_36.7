@@ -7,7 +7,6 @@ import { FaMoon, FaSun } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 import { Avatar } from "flowbite-react";
 import { toggleTheme } from "../redux/theme/themeSlice";
-
 import { signoutSuccess } from "../redux/user/userSlice";
 
 const Header = () => {
