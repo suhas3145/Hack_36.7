@@ -8,6 +8,11 @@ import About from "./pages/About";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import PrivateRoute from "./components/PrivateRoute";
+
+
+import Ideas from "./pages/Ideas";
+import SingleIdea from "./pages/SingleIdea";
+
 import ScrollToTop from "./components/ScrollToTop";
 import Chat from "./pages/Chat";
 
@@ -26,6 +31,8 @@ const App = () => {
           <Route element={<PrivateRoute />}>
             <Route path="/dashboard" element={<Dashboard />} />
           </Route>
+          <Route path="/all-ideas" element={<Ideas />} />
+          <Route path="/idea/:ideaId" element={<SingleIdea />} />
         </Routes>
         <FooterComp />
       </BrowserRouter>

@@ -4,7 +4,11 @@ import dotenv from "dotenv";
 
 import userRoutes from "./routes/user.route.js";
 import authRoutes from "./routes/auth.route.js";
+<<<<<<< HEAD
 import messageRoute from "./routes/message.route.js";
+=======
+import ideasRoutes from "./routes/ideasRoutes.js";
+>>>>>>> refs/remotes/origin/main
 
 import cookieParser from "cookie-parser";
 import { app, server } from "./socket/socket.js";
@@ -31,7 +35,11 @@ app.use(cors());
 
 app.use("/api/user", userRoutes);
 app.use("/api/auth", authRoutes);
+<<<<<<< HEAD
 app.use("/api/messages", messageRoute);
+=======
+app.use("/api/ideas", ideasRoutes);
+>>>>>>> refs/remotes/origin/main
 
 app.use((err, req, res, next) => {
   //middleware for handling errors
