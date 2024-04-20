@@ -17,7 +17,7 @@ router.get("/get-all-ideas", getAllIdeas);
 
 //simgle complaint..
 
-router.get("/sigle-idea/:ideaId", singleIdea);
+router.get("/single-idea/:ideaId", singleIdea);
 
 //delete-complaint...
 
