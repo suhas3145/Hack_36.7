@@ -32,7 +32,7 @@ const newIdea = async (req, res, next) => {
 };
 
 const getAllIdeas = async (req, res, next) => {
-  const ideas = await Idea.find({}).populate("student");
+  const ideas = await Idea.find({});
   res.status(200).json({
     success: true,
     message: "Fetched Successfully!",
@@ -42,7 +42,7 @@ const getAllIdeas = async (req, res, next) => {
 
 const singleIdea = async (req, res, next) => {
   const { ideaId } = req.params;
-  const idea = await Complaint.findById(ideaId).populate("user");
+  const idea = await Idea.findById(ideaId).populate("createdBy");
 
   res.status(200).json({
     success: true,
